@@ -1,0 +1,64 @@
+.main .side-nav {
+	width: 228px;
+	height: 100%;
+
+	/*position: absolute;*/
+	/*top: 149px;*/
+	/*left: 0;*/
+	/*border-right: 1px solid #ddd;*/
+	float:left;
+}
+
+.main .side-nav-header {
+	height: 40px;
+	font-size: 16px;
+	font-weight: bold;
+	line-height: 40px;
+	/*margin-bottom: 15px;*/
+	/*margin-left: 30px;*/
+	background-color: #edf4fc;
+	border-bottom: 2px solid white;
+
+	cursor: pointer;
+}
+
+/*.main .side-nav-header div{*/
+	/*margin: auto 15px auto 30px;*/
+/*}*/
+
+.main .side-nav-header .header-content {
+	margin-left: 15px;
+}
+
+.main .side-nav-header input[type="checkbox"] {
+	width: 16px;
+	height: 16px;
+	margin-top: 12px;
+	/*vertical-align: bottom;*/
+}
+
+.main .side-nav-content {
+	font-size: 14px;
+	margin-left: 30px;
+	margin-bottom: 20px;
+	/*margin: auto 15px auto 50px;*/
+}
+
+.main .side-nav-content li {
+	/*margin-bottom: 15px;*/
+	margin-top: 15px;
+}
+
+.main .side-nav-header span.caret {
+	border-top: 5px solid #444851;
+	border-left: 5px solid transparent;
+	border-right: 5px solid transparent;
+	vertical-align: middle;
+	margin-right: 5px;
+}
+
+.main .side-nav-header.slideup span.caret {
+	border-left: 5px solid #444851;
+	border-top: 5px solid transparent;
+	border-bottom: 5px solid transparent;
+}

@@ -1,0 +1,70 @@
+/*导航条css*/
+.navbar-default {
+    background-color: #FFFFFF;
+    /*修改默认的背景颜色*/
+    height: 80px;
+}
+.header {
+    height: 80px;
+}
+
+/*自动居中*/
+#example-navbar-collapse-1 {
+    position: relative;
+    height: 80px;
+    width: 970px;
+    margin: 0 auto;
+    margin-top: 19px;
+}
+#myTabs {
+    position: absolute;
+    right: 0px;
+}
+
+.navbar {
+    border-radius: 0;
+}
+
+.navbar .nav-pills > li > a {
+    color: #444851;
+    font-size: 18px;
+
+}
+.navbar .nav-pills > li > a:hover {
+    background-color: #C7E1FF;
+    color: #111111;
+}
+.navbar .nav-pills .active > a {
+    background-color: #C7E1FF;
+}
+.navbar-right {
+    margin-right: 5px;
+}
+
+/*高级搜索css*/
+
+#dropdownBtn {
+    background-color: #DDDDDD;
+    color: #FFFFFF;
+    border-radius: 0;
+}
+
+/*搜索条css*/
+
+#searchBar {
+    /*width: 94%;*/
+    /*margin-left: 30px;*/
+    width: 970px;
+    margin: 0 auto;
+    margin-top: 14px;
+    margin-bottom: 15px;
+    /*border-bottom: 1px solid #ddd;*/
+}
+#searchBar input {
+    height: 42px;
+    border-color: #ddd;
+}
+#searchBar button {
+    width: 62px;
+    height: 42px;
+}

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>上钞专利库 - 搜索结果</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bootstrap-select.min.css" rel="stylesheet">
+        <link href="css/datepicker.css" rel="stylesheet">
+        <link href="css/default.css" rel="stylesheet">
+        <!--<link href="css/header.css" rel="stylesheet">-->
+        <!--<link href="css/footer.css" rel="stylesheet">-->
+        <link href="css/side-nav.css" rel="stylesheet">
+        <link href="css/popup.css" rel="stylesheet">
+        <link href="css/right-content.css" rel="stylesheet">
+    </head>
+    <body ng-app="searchModule" ng-controller="addCtrl as addList">
+
+        <div class="search-div" ng-controller="changeMode as changeMode">
+            <div class="search-nav">
+                <a class="{{changeMode.select1}}" href="#" ng-click="changeMode.leftChange1()">专利文献</a>
+                /
+                <a  class="{{changeMode.select2}}" href="#" ng-click="changeMode.leftChange2()">IPC分类</a>
+                <a class="search-mode" href="#" ng-click="changeMode.rightChange()">{{changeMode.title}}</a>
+            </div>
+            <!--搜索模式切换-->
+            <div>
+
+                <!-- 普通搜索条 -->
+                <div class="input-group" ng-hide="changeMode.rightMode">
+                    <input type="text" class="form-control" placeholder="请输入搜索内容">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <!-- /btn-group -->
+                </div>
+                <!-- 高级搜索 -->
+                <div class="popup" ng-show="changeMode.rightMode">
+                    <form role="form">
+                        <!--测试添加的js  -->
+                        <div class="search-group" ng-repeat="list in addList.lists">
+                            <label>
+                                <select class="form-control title selectpicker" data-style="btn-default">
+                                    <option ng-repeat="x in list.mainSeletes" value="{{x}}">{{x}}</option>
+                                </select>
+                            </label>
+                            <label>
+
+                                <select class="form-control accuracy selectpicker" data-style="btn-default">
+                                    <option ng-repeat="x in list.conditional" value="{{x}}">{{x}}</option>
+                                </select>
+                            </label>
+                            <label>
+                                <input type="text" class="form-control">
+                            </label>
+                            <label>
+                                <select class="form-control logic selectpicker" data-style="btn-default">
+                                    <option ng-repeat="x in list.logic">{{x}}</option>
+                                </select>
+                            </label>
+                        </div>
+
+                        <div class="search-auxiliary">
+                            <button class="btn btn-default" ng-click="addList.add()">
+                                +
+                            </button>
+                            <div class="time">
+                                <label>
+                                    <input type="text" class="form-control" placeholder="起始年">
+                                </label>
+                                -
+                                <label>
+                                    <input type="text" class="form-control" placeholder="结束年">
+                                </label>
+                            </div>
+                        </div>
+
+                        <button class="search btn btn-primary">搜索</button>
+
+                    </form>
+
+                </div>
+            </div>
+        </div>
+        <script src="js/jquery.min.js"></script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/bootstrap-select.min.js"></script>
+        <script src="js/bootstrap-datepicker.js"></script>
+        <script src="js/result.js"></script>
+        <script type="text/javascript" src="js/angular.min.js"></script>
+        <script type="text/javascript" src="js/searchList.js"></script>
+    </body>
+</html>
+
+<!-- <div class="search-group">
+<label>
+<select class="form-control title selectpicker" data-style="btn-default">
+<option>标题</option>
+<option>关键词</option>
+<option>作者</option>
+<option>摘要</option>
+</select>
+</label>
+<label>
+<select class="form-control accuracy selectpicker" data-style="btn-default">
+<option>模糊</option>
+<option>精确</option>
+</select>
+</label>
+<label>
+<input type="text" class="form-control">
+</label>
+<label>
+<select class="form-control logic selectpicker" data-style="btn-default">
+<option>与</option>
+<option>或</option>
+<option>非</option>
+</select>
+</label>
+</div> -->

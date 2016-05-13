@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>上钞专利库 - 搜索结果</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/bootstrap-select.min.css" rel="stylesheet">
+	<link href="css/datepicker.css" rel="stylesheet">
+	<link href="css/default.css" rel="stylesheet">
+	<!--<link href="css/header.css" rel="stylesheet">-->
+	<!--<link href="css/footer.css" rel="stylesheet">-->
+	<link href="css/side-nav.css" rel="stylesheet">
+	<link href="css/popup.css" rel="stylesheet">
+	<link href="css/right-content.css" rel="stylesheet">
+</head>
+<body>
+	<!-- 导航条，采用栅格布局 -->
+	<div class="header">
+		<div class="navbar navbar-default">
+			<div class="header-div" id="example-navbar-collapse-1">
+				<a class="navbar-brand " href="#">Logo</a>
+				<ul class="nav" id="myTabs">
+					<li class="active   ">
+						<a href="#">检索</a>
+					</li>
+					<li class=" ">
+						<a href="#">历史</a>
+					</li>
+					<li class=" ">
+						<a href="#">统计</a>
+					</li>
+					<li class=" ">
+						<a href="#">我的</a>
+					</li>
+
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<!-- 搜索条，左间距30px button62*42 -->
+	<div class="searchBar">
+		<div class="input-group">
+			<input type="text" class="form-control" placeholder="请输入搜索内容">
+			<div class="input-group-btn">
+				<button id="dropdownBtn" type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >
+					<span class="glyphicon glyphicon-triangle-bottom" aria-hidden="true" ></span>
+				</button>
+				<button type="button" class="btn btn-primary" aria-haspopup="true" aria-expanded="false">
+					<span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+				</button>
+			</div>
+			<!-- /btn-group -->
+		</div>
+		<!--input-group-->
+
+		<div class="popup">
+			<form>
+				<div class="search-group">
+					<label>
+						<select class="form-control title selectpicker" data-style="btn-default">
+							<option>标题</option>
+							<option>关键词</option>
+							<option>作者</option>
+							<option>摘要</option>
+						</select>
+					</label>
+					<label>
+						<select class="form-control accuracy selectpicker" data-style="btn-default">
+							<option>模糊</option>
+							<option>精确</option>
+						</select>
+					</label>
+					<label>
+						<input type="text" class="form-control">
+					</label>
+					<label>
+						<select class="form-control logic selectpicker" data-style="btn-default">
+							<option>与</option>
+							<option>或</option>
+							<option>非</option>
+						</select>
+					</label>
+				</div>
+				<div class="search-group">
+					<label>
+						<select class="form-control title selectpicker" data-style="btn-default">
+							<option>标题</option>
+							<option>关键词</option>
+							<option>作者</option>
+							<option>摘要</option>
+						</select>
+					</label>
+					<label>
+						<select class="form-control accuracy selectpicker" data-style="btn-default">
+							<option>模糊</option>
+							<option>精确</option>
+						</select>
+					</label>
+					<label>
+						<input type="text" class="form-control">
+					</label>
+					<label>
+						<select class="form-control logic selectpicker" data-style="btn-default">
+							<option>与</option>
+							<option>或</option>
+							<option>非</option>
+						</select>
+					</label>
+				</div>
+				<div class="search-group">
+					<label>
+						<select class="form-control title selectpicker" data-style="btn-default">
+							<option>标题</option>
+							<option>关键词</option>
+							<option>作者</option>
+							<option>摘要</option>
+						</select>
+					</label>
+					<label>
+						<select class="form-control accuracy selectpicker" data-style="btn-default">
+							<option>模糊</option>
+							<option>精确</option>
+						</select>
+					</label>
+					<label>
+						<input type="text" class="form-control">
+					</label>
+					<label>
+						<select class="form-control logic selectpicker" data-style="btn-default">
+							<option>与</option>
+							<option>或</option>
+							<option>非</option>
+						</select>
+					</label>
+				</div>
+				<div class="search-auxiliary">
+					<button class="btn btn-default">
+						+
+					</button>
+					<div class="time">
+						<label>
+							<input type="text" class="form-control" placeholder="起始年份">
+						</label>
+						至
+						<label>
+							<input type="text" class="form-control" placeholder="结束年份">
+						</label>
+					</div>
+				</div>
+				<button class="search btn btn-primary">
+					搜索
+				</button>
+			</form>
+		</div>
+
+	</div>
+	<!-- /searchBar -->
+
+
+
+	<div class="main">
+
+		<div class="side-nav">
+			<form>
+				<div class="side-nav-header">
+					<!--<div class="checkbox">-->
+						<!--<label><input type="checkbox" style="vertical-align: middle">专利分类</label>-->
+					<!--</div>-->
+					<div class="header-content">
+						<span class="caret"></span> 专利分类
+					</div>
+				</div>
+				<ul class="side-nav-content list-unstyled">
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">纺织;造纸 (118)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">作业;运输 (130)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">物理 (93)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">化学;冶金 (24)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">电学 (4)</label>
+						</div>
+					</li>
+				</ul>
+
+				<div class="side-nav-header">
+					<!--<div class="checkbox">-->
+						<!--<label><input type="checkbox">申请日期</label>-->
+					<!--</div>-->
+					<div class="header-content">
+						<span class="caret"></span> 申请日期
+					</div>
+				</div>
+				<ul class="side-nav-content list-unstyled">
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">2011 (24)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">2012 (118)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">2013 (230)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">2014 (330)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">2015 (130)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">2016 (30)</label>
+						</div>
+					</li>
+				</ul>
+
+				<div class="side-nav-header">
+					<!--<div class="checkbox">-->
+						<!--<label><input type="checkbox">专利类型</label>-->
+					<!--</div>-->
+					<div class="header-content">
+						<span class="caret"></span> 专利类型
+					</div>
+				</div>
+				<ul class="side-nav-content list-unstyled">
+					<li>
+						<div class="checkbox">
+							<label class="checkbox-inline"><input type="checkbox">发明专利 (327)</label>
+						</div>
+					</li>
+					<li>
+						<div class="checkbox">
+							<label><input type="checkbox">实用新型 (188)</label>
+						</div>
+					</li>
+				</ul>
+
+			</form>
+		</div>
+
+
+			<div class="right-content ">
+				<div class="row record-number">
+
+					<div class="col-xs-3">
+						<div class="record-number-word">
+							检测到共
+							<span>515条记录</span>
+						</div>
+					</div>
+					<!-- col-md-3 结束 -->
+					<div class="col-xs-9 ">
+						<!-- Single button -->
+						<div class="btn-group ">
+							<button type="button" class="btn btn-default dropdown-toggle record-number-top" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+								按时间排序
+								<span class="caret"></span>
+							</button>
+							<ul class="dropdown-menu">
+								<li>
+									<a href="#">按时间排序</a>
+								</li>
+								<li>
+									<a href="#">按时间排序</a>
+								</li>
+								<li>
+									<a href="#">按时间排序</a>
+								</li>
+								<li>
+									<a href="#">按时间排序</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- col-md-9 结束 -->
+				</div>
+				<!-- record-number结束 -->
+				<div class="record-all">
+					<div class="record-one">
+						<div class="record-content">
+							<div class="record-icon">
+								<ul>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- record-icon结束 -->
+							<div class="record-title">
+								<span class="index">1.</span>
+								<a class="fulltext" target="_blank" href="http://f.wanfangdata.com.cn/Patent.ashx?Type=download&ID=Patent_CN201410250450.6">全文</a>
+								<a target="_blank" href="http://d.wanfangdata.com.cn/Patent/CN201410250450.6/">一种印钞废水的处理方法及分离回收系统</a>
+							</div>
+							<!-- record-title结束 -->
+							<div class="record-subtitle">[发明专利] CN201410250450.6_  西安瑞兰环保技术有限公司 2014年6月6日</div>
+							<!-- record-subtitle结束 -->
+							<div class="record-intro">
+								本发明公开了一种印钞废水的处理方法及分离回收系统，属于环保设备技术领域，括：将待处理的印钞废水，加压至2～3MPa，然后进行粗过滤，去除大颗粒物质，得到滤液；将滤液进行反渗透处理，去除废水中的盐分，得到反渗透浓液和反
+							</div>
+							<!-- record-intro结束 -->
+
+						</div>
+						<div class="img">
+							<img src="imgs/1.png" alt="好图片" class="img-rounded"></div>
+						<!-- 图片结束 -->
+					</div>
+					<!-- record-one结束 -->
+					<div class="record-one">
+						<div class="record-content">
+							<div class="record-icon">
+								<ul>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- record-icon结束 -->
+							<div class="record-title">
+								<span class="index">1.</span>
+								<a class="fulltext" target="_blank" href="http://f.wanfangdata.com.cn/Patent.ashx?Type=download&ID=Patent_CN201410250450.6">全文</a>
+								<a target="_blank" href="http://d.wanfangdata.com.cn/Patent/CN201410250450.6/">一种印钞废水的处理方法及分离回收系统</a>
+							</div>
+							<!-- record-title结束 -->
+							<div class="record-subtitle">[发明专利] CN201410250450.6_  西安瑞兰环保技术有限公司 2014年6月6日</div>
+							<!-- record-subtitle结束 -->
+							<div class="record-intro">
+								本发明公开了一种印钞废水的处理方法及分离回收系统，属于环保设备技术领域，括：将待处理的印钞废水，加压至2～3MPa，然后进行粗过滤，去除大颗粒物质，得到滤液；将滤液进行反渗透处理，去除废水中的盐分，得到反渗透浓液和反
+							</div>
+							<!-- record-intro结束 -->
+
+						</div>
+						<div class="img">
+							<img src="imgs/1.png" alt="好图片" class="img-rounded"></div>
+						<!-- 图片结束 -->
+					</div>
+					<!-- record-one结束 -->
+					<div class="record-one">
+						<div class="record-content">
+							<div class="record-icon">
+								<ul>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- record-icon结束 -->
+							<div class="record-title">
+								<span class="index">1.</span>
+								<a class="fulltext" target="_blank" href="http://f.wanfangdata.com.cn/Patent.ashx?Type=download&ID=Patent_CN201410250450.6">全文</a>
+								<a target="_blank" href="http://d.wanfangdata.com.cn/Patent/CN201410250450.6/">一种印钞废水的处理方法及分离回收系统</a>
+							</div>
+							<!-- record-title结束 -->
+							<div class="record-subtitle">[发明专利] CN201410250450.6_  西安瑞兰环保技术有限公司 2014年6月6日</div>
+							<!-- record-subtitle结束 -->
+							<div class="record-intro">
+								本发明公开了一种印钞废水的处理方法及分离回收系统，属于环保设备技术领域，括：将待处理的印钞废水，加压至2～3MPa，然后进行粗过滤，去除大颗粒物质，得到滤液；将滤液进行反渗透处理，去除废水中的盐分，得到反渗透浓液和反
+							</div>
+							<!-- record-intro结束 -->
+
+						</div>
+						<div class="img">
+							<img src="imgs/1.png" alt="好图片" class="img-rounded"></div>
+						<!-- 图片结束 -->
+					</div>
+					<!-- record-one结束 -->
+					<div class="record-one">
+						<div class="record-content">
+							<div class="record-icon">
+								<ul>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- record-icon结束 -->
+							<div class="record-title">
+								<span class="index">1.</span>
+								<a class="fulltext" target="_blank" href="http://f.wanfangdata.com.cn/Patent.ashx?Type=download&ID=Patent_CN201410250450.6">全文</a>
+								<a target="_blank" href="http://d.wanfangdata.com.cn/Patent/CN201410250450.6/">一种印钞废水的处理方法及分离回收系统</a>
+							</div>
+							<!-- record-title结束 -->
+							<div class="record-subtitle">[发明专利] CN201410250450.6_  西安瑞兰环保技术有限公司 2014年6月6日</div>
+							<!-- record-subtitle结束 -->
+							<div class="record-intro">
+								本发明公开了一种印钞废水的处理方法及分离回收系统，属于环保设备技术领域，括：将待处理的印钞废水，加压至2～3MPa，然后进行粗过滤，去除大颗粒物质，得到滤液；将滤液进行反渗透处理，去除废水中的盐分，得到反渗透浓液和反
+							</div>
+							<!-- record-intro结束 -->
+
+						</div>
+						<div class="img">
+							<img src="imgs/1.png" alt="好图片" class="img-rounded"></div>
+						<!-- 图片结束 -->
+					</div>
+					<!-- record-one结束 -->
+					<div class="record-one">
+						<div class="record-content">
+							<div class="record-icon">
+								<ul>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-save" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-eye-open" aria-hidden="true"></span>
+										</a>
+									</li>
+									<li class="type">
+										<a href="">
+											<span class="glyphicon glyphicon-star-empty" aria-hidden="true"></span>
+										</a>
+									</li>
+								</ul>
+							</div>
+							<!-- record-icon结束 -->
+							<div class="record-title">
+								<span class="index">1.</span>
+								<a class="fulltext" target="_blank" href="http://f.wanfangdata.com.cn/Patent.ashx?Type=download&ID=Patent_CN201410250450.6">全文</a>
+								<a target="_blank" href="http://d.wanfangdata.com.cn/Patent/CN201410250450.6/">一种印钞废水的处理方法及分离回收系统</a>
+							</div>
+							<!-- record-title结束 -->
+							<div class="record-subtitle">[发明专利] CN201410250450.6_  西安瑞兰环保技术有限公司 2014年6月6日</div>
+							<!-- record-subtitle结束 -->
+							<div class="record-intro">
+								本发明公开了一种印钞废水的处理方法及分离回收系统，属于环保设备技术领域，括：将待处理的印钞废水，加压至2～3MPa，然后进行粗过滤，去除大颗粒物质，得到滤液；将滤液进行反渗透处理，去除废水中的盐分，得到反渗透浓液和反
+							</div>
+							<!-- record-intro结束 -->
+
+						</div>
+						<div class="img">
+							<img src="imgs/1.png" alt="好图片" class="img-rounded"></div>
+						<!-- 图片结束 -->
+					</div>
+					<!-- record-one结束 -->
+					<div class="###">
+						<div class="page">
+							<ul class="pagination">
+								<li>
+									<a href="#" aria-label="Previous">
+										<span aria-hidden="true">&laquo;</span>
+									</a>
+								</li>
+								<li>
+									<a href="#">1</a>
+								</li>
+								<li class="active">
+									<a href="#">2</a>
+								</li>
+								<li>
+									<a href="#">3</a>
+								</li>
+								<li>
+									<a href="#">4</a>
+								</li>
+								<li>
+									<a href="#">5</a>
+								</li>
+								<li>
+									<a href="#" aria-label="Next">
+										<span aria-hidden="true">&raquo;</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+					<!-- 分页结束 -->
+				</div>
+				<!-- record-all结束 -->
+
+			</div>
+			<!--right-content结束-->
+	<div class="clearfix"></div>
+
+	</div>
+
+	<!--footer-->
+	<div class="footer" >
+		<!--<hr>-->
+		<div class="footer-content text-center">
+			<div class="alink">
+				<a href=#>联系我们</a>
+				<a href=#>关于我们</a>
+				<a href=#>意见反馈</a>
+				<a href=#>友情链接</a>
+			</div>
+			<p>Copyright © 2016 | 京ICP备</p>
+		</div>
+
+	</div>
+
+
+	<script src="js/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/bootstrap-select.min.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script src="js/result.js"></script>
+	<script type="text/javascript" src="/js/angular.min.js"></script>
+</body>
+</html>

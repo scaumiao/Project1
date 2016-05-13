@@ -1,0 +1,141 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+
+html, body {
+	font-size: 14px;
+	color: #444851;
+
+	width: 100%;
+	/*height: 100%;*/
+}
+
+/*导航条css*/
+.navbar-default {
+	background-color: #FFFFFF;
+	/*修改默认的背景颜色*/
+	height: 80px;
+}
+.header {
+	height: 80px;
+}
+
+/*自动居中*/
+#example-navbar-collapse-1 {
+	position: relative;
+	height: 80px;
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 19px;
+}
+#myTabs {
+	position: absolute;
+	right: 0px;
+}
+
+.navbar .nav > li{
+	display: inline-block;
+}
+.navbar .nav > li > a {
+	color: #000000;
+	font-size: 18px;
+}
+.navbar .nav> li > a:hover {
+	background-color: #FFFFFF;
+	border-bottom: 2px solid #C7E1FF;
+	/*color: #111111;*/
+}
+.navbar .nav> li > a:visited {
+	background-color: #FFFFFF;
+	/*color: #111111;*/
+}
+.navbar .nav .active > a {
+	border-bottom: 2px solid #619CE4;
+	/*background-color: #C7E1FF;*/
+}
+.navbar-right {
+	margin-right: 5px;
+}
+
+/*高级搜索css*/
+
+#dropdownBtn {
+	background-color: #DDDDDD;
+	color: #FFFFFF;
+	border-radius: 0;
+}
+
+/*搜索条css*/
+
+.searchBar {
+	/*width: 94%;*/
+	/*margin-left: 30px;*/
+	width: 970px;
+	margin: 0 auto;
+	margin-top: 14px;
+	margin-bottom: 15px;
+	position: relative;
+	/*border-bottom: 1px solid #ddd;*/
+}
+.searchBar .input-group > input {
+	height: 42px;
+	border-color: #ddd;
+}
+.searchBar .input-group-btn button {
+	width: 62px;
+	height: 42px;
+}
+
+/*.searchBar .input-group-btn button + button {*/
+	/*!*border-top-left-radius: 0;*!*/
+	/*!*border-bottom-left-radius: 0;*!*/
+/*}*/
+
+.searchBar button span.glyphicon-search {
+	font-size: 20px;
+}
+
+.main {
+	/*margin-top: 149px;*/
+	width: 970px;
+	/*height: 1180px;*/
+	/*height: 1496px;*/
+
+	margin: 0 auto;
+	/*margin-bottom: ;*/
+	position: relative;
+	border: 1px solid #ddd;
+
+	/*border-bottom: none;*/
+	/*border-right: 1px solid #ddd;*/
+	/*top: 0px;*/
+}
+
+/*div.footer hr{*/
+/*width: 100%;*/
+/*!*margin: 17px;*!*/
+/*margin-left:0;*/
+/*border-color: #ddd;*/
+/*}*/
+
+.footer{
+	height:80px;
+	border-top: 1px solid #ddd;
+	/*clear: both;*/
+	margin-top: 15px;
+}
+
+div.footer .footer-content{
+	font-size:12px;
+	color: #AAAAAA;
+	margin-top: 20px;
+}
+
+div.footer .footer-content a{
+	color: #AAAAAA;
+	margin-right: 5px;
+}
+a:link, a:visited, a:hover, a:hover {
+    text-decoration: none;
+}

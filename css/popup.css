@@ -1,0 +1,177 @@
+.search-div{
+	height: 800px;
+	width: 600px;
+	padding-left: 20px;
+	/*position: absolute;*/
+}
+.search-div .search-nav{
+	position: relative;
+	top:15px;
+	font-size: 16px;
+	width: 600px;
+	/*left:62px;*/
+}
+
+/*a:link {text-decoration:none;}
+a:visited {text-decoration:none;}
+a:hover {text-decoration:underline;}
+a:active {text-decoration:underline;}*/
+
+/*.search-div .search-nav .checked {
+	color: green;
+}*/
+
+.search-div .search-nav .unchecked {
+	color: black;
+}
+
+
+
+
+.search-div .search-nav a.search-mode{
+	/*padding-left: 100px;*/
+	position: absolute;
+	right: 0px;
+	/*left: 200px;*/
+}
+
+/*普通搜索css*/
+.input-group{
+	position: relative;
+	top: 30px;
+}
+
+
+/*搜索条css*/
+.input-group{
+	width: 600px;
+}
+
+/*取消绝对定位*/
+div.popup {
+	width: 600px;
+	/*height: 300px;*/
+
+	position: relative;
+	top: 30px;
+	/*left: 62px;*/
+
+	border: 1px solid #ddd;
+	background-color: #fff;
+
+	text-align: center;
+	z-index: 2;
+	/*display: none;*/
+}
+
+div.popup form {
+	margin-top: 30px;
+	/*margin-left: 25px;*/
+}
+
+div.popup .search-group {
+	margin-bottom: 15px;
+}
+
+div.popup .search-group label,
+div.popup .search-group .btn-default,
+div.popup input {
+	font-size: 14px;
+	font-weight: normal;
+	color: #444851;
+}
+
+div.popup .search-group label {
+	width: 80px;
+	height: 30px;
+
+	margin-right: 15px;
+}
+
+div.popup label {
+	vertical-align: middle;
+}
+
+div.popup .search-group label:nth-of-type(3) {
+	width: 250px;
+}
+
+div.popup .search-group label:nth-of-type(4) {
+	margin-right: 0;
+}
+
+div.popup .search-group select {
+	width: 80px;
+	height: 30px;
+	padding-top: 0;
+	padding-bottom: 0;
+}
+
+/*div.popup .search-auxiliary {*/
+	/*width: 535px;*/
+	/*border: 1px solid black;*/
+	/*margin: 0 auto;*/
+
+/*}*/
+
+div.popup .btn,
+div.popup input {
+	border-color: #ddd;
+}
+
+/*搜索年份以及添加搜索条件div*/
+div.popup .search-auxiliary{
+	width: 598px;
+	height: 35px;
+	position: relative;
+}
+
+/*添加按钮‘+’的css*/
+div.popup .search-auxiliary button{
+	width: 35px;
+	height: 35px;
+
+	position: absolute;
+	left: 25px;
+
+	font-size: 20px;
+
+	text-align: center;
+	vertical-align: middle;
+	line-height: 25px;
+
+	margin: 0;
+	padding: 0;
+
+
+	color: #619CE4;
+	background-color: #EDF4FC;
+}
+/*搜索年份css*/
+div.popup .search-auxiliary .time {
+	font-size: 14px;
+	display: inline-block;
+	position: absolute;
+	/*position: relative;*/
+	right: 25px;
+	color: #AAAAAA;
+}
+div.popup .search-auxiliary .time input{
+	width: 95px;
+}
+
+/*搜索确定按钮css*/
+div.popup button.search.btn {
+	width: 94px;
+	height: 35px;
+
+	background-color: #619CE4;
+	/*margin-left: 240px;*/
+	/*margin-top: 55px;*/
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-size: 16px;
+	/*font-weight: bold;*/
+	/*background-color: #619ce4;*/
+	border: none;
+}
